@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import contextmenager
+from contextlib import contextmanager
 
 # Parâmetro para conexão com baco de dados.
 db_user = "user"
@@ -19,7 +19,7 @@ session = Session()
 
 
 # Gerenciando conexão com banco de dados
-@contextmenager
+@contextmanager
 def get_db():
     db = Session()
     try:
