@@ -17,5 +17,5 @@ class UsuarioRepositorie:
         self.session.delete(usuario)
         self.session.commit()
 
-    def listar_usuario(self):
+    def listar__todos_usuario(self):
         return self.session.query(Usuario).all()
