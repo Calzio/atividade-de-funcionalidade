@@ -1,2 +1,3 @@
-SQLAlchemy
-pymysql
+Docker
+MySQL
+Python
